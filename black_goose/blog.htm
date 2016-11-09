@@ -2,12 +2,21 @@
 <html>
 <head>
     <title>Menu</title>
+    <script language="javascript" type="text/javascript">
+ <!--
+ function popitup(url) {
+newwindow=window.open(url,'name','height=200,width=150');
+if (window.focus) {newwindow.focus()}
+return false;
+ }
+ // -->
+</script>
+    
 <style>
 div.container {
     width: 100%;
     border: 1px solid gray;
 }
-
 header, footer {
     padding: 1em;
     color: white;
@@ -15,14 +24,12 @@ header, footer {
     clear: left;
     text-align: center;
 }
-
 nav {
     float: left;
     max-width: 150px;
     margin: 0;
     padding: 1em;
 }
-
 nav ul {
     list-style-type: none;
     margin-bottom: 50px
@@ -32,7 +39,6 @@ nav ul {
 nav ul a {
     text-decoration: none;
 }
-
 article {
     margin-left: 170px;
     border-left: 1px solid gray;
@@ -93,13 +99,15 @@ article {
     <h2>Our Favorite Dishes</h2>
     <hr/>
         <p>Chack chouka</p>
-        <a href="chachouka.htm" target="new"><img src= "images/chakchouka.jpg" width="150px"/></a>
+        <a href="chachouka.htm" onclick="return popitup('chachouka.htm')"><img src= "images/chakchouka.jpg" width="150px"/></a>
         <p>Cooked Goose</p>
-        <a href="cookedgoose.htm" target="new"><img src= "images/cookedgoose.jpg" width="150px"/></a>
+        <a href="cookedgoose.htm" onclick="return popitup('cookedgoose.htm')"><img src= "images/cookedgoose.jpg" width="150px"/></a>
         <p>Napa Valley Wine</p>
-        <a href="wine.htm" target="new"><img src= "images/wine.jpg" width="150px"/></a>
+        <a href="wine.htm" onclick="return popitup('wine.htm')"><img src= "images/wine.jpg" width="150px"/></a>
         <p>Bread Sticks</p>
-        <a href="breadsticks.htm" target="new"><img src= "images/breadsticks.jpg" width="150px"/></a>
+        <a href="breadsticks.htm" onclick="return popitup('breadsticks.htm')"><img src= "images/breadsticks.jpg" width="150px"/></a>
+    
+    </br>
     <a href="#top">To the top of the page</a>
 </article>
   
